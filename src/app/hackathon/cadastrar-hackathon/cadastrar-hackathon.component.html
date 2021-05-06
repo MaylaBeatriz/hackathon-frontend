@@ -1,0 +1,23 @@
+<form [formGroup]="cadastroForm" (ngSubmit)="cadastrar()">
+  <div class="col-3">
+    <label for="tx-nome" class="form-label">Nome</label>
+    <input
+      type="text"
+      formControlName="nome"
+      class="form-control"
+      id="tx-nome"
+    />
+  </div>
+  <div class="col-3">
+    <label for="tx-nota" class="form-label">Nota</label>
+    <input
+      type="number"
+      formControlName="nota"
+      class="form-control"
+      id="tx-nota"
+    />
+  </div>
+  <div class="mt-5">
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </div>
+</form>
